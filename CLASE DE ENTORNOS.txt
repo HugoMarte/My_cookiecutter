@@ -1,0 +1,15 @@
+HOOKS
+
+    Los Hooks son sentencias que se van a ejecutar antes o después de generar la plantilla de datos. 
+    Por ejemplo, puedes usarlos para verificar el nombre de una carpeta, actualizar git, etc.
+
+    Implementación de Hooks
+    Se crea la carpeta “hooks”, adentro de la carpeta principal de tu proyecto.
+    Dentro de la carpeta se agregan los archivos “pre_gen_project.py” (lo que se ejecuta antes 
+    de generar la plantilla) y “pos_gen_project.py” (lo que se ejecuta después de generar la plantilla).
+    Por ejemplo, en “pre_gen_project.py” se puede inicializar git o validar nombres y archivos para 
+    evitar errores.
+
+    En el archivo “pos_gen_project.py” se puede hacer el primer commit en git o mostrar la finalización 
+    de la instalación de dependencias.
+
